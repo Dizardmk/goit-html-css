@@ -1,0 +1,239 @@
+:root {
+  --primary-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+  /* --tertiary-font: 'Raleway', sans-serif; */
+  --accent-color: #2196f3;
+  --title-color: #212121;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-style: normal;
+  position: relative;
+  background: #ffffff;
+}
+
+/* ========== components ========== */
+.logo {
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+}
+.logo-header {
+  color: #212121;
+}
+.logo-footer {
+  color: #ffffff;
+}
+.logo-part {
+  color: #2196f3;
+}
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+.address {
+  font-style: normal;
+}
+/* ========== end components ========== */
+
+/* ========== header ========== */
+.navigation-list-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.header-list-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+.navigation-list-link:hover,
+.navigation-list-link:focus,
+.header-list-link:hover,
+.header-list-link:focus {
+  color: var(--accent-color);
+}
+.active {
+  color: var(--accent-color);
+}
+.header {
+  border: 1px solid #ececec;
+}
+/* ========== end header ========== */
+
+/* ========== hero ========== */
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.364;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.modal-button {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+/* .modal-button is in components*/
+/* ========== end hero ========== */
+
+/* ========== features ========== */
+.features-list-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+.features-list-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+/* ========== end features ========== */
+
+/* ========== doing ========== */
+/* .title is in components*/
+/* .doing-list-img {
+position: absolute;
+width: 370px;
+height: 294px;
+left: 1015px;
+top: 1061px;} */
+/* ========== end doing ========== */
+
+/* ========== team ========== */
+/* .title is in components*/
+.team-list-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.187;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.team-list-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.187;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+/* .team-list-img {
+position: absolute;
+background: #FFFFFF;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+} */
+/* ========== end team ========== */
+
+/* ========== footer ========== */
+.footer {
+  background: #2f303a;
+}
+.logo-dark {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.footer-list-map {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.footer-list-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+/* ========== end footer ========== */
+
+/* ========== portfolio ========== */
+.filter-button {
+  font-family: var(--primary-font);
+  font-style: normal;
+  height: 38px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  background: #f5f4fa;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+.filter-button:hover,
+.filter-button:focus {
+  color: #ffffff;
+  background: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.portfolio-list-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+}
+.portfolio-list-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+/* .portfolio-list-item {
+  position: absolute;
+  width: 370px;
+  height: 404px;
+  left: 215px;
+  top: 262px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+} */
+/* ========== end portfolio ========== */
