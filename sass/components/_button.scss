@@ -1,0 +1,38 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  @include font(16px, 30px);
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background: #2196f3;
+  min-width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  padding: 10px 32px;
+  cursor: pointer;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    fill: #ffffff;
+    margin-left: 10px;
+  }
+
+  &--footer-form {
+    padding: 10px 29px;
+  }
+
+  &--modal-form {
+    align-self: center;
+  }
+
+  &:hover,
+  &:focus {
+    background: #188ce8;
+  }
+}

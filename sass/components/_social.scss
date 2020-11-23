@@ -1,0 +1,39 @@
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &.team__social {
+      fill: $social-team-color;
+    }
+    &.footer__social {
+      fill: $social-color;
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    &:hover,
+    &:focus {
+      background: $accent-color;
+      fill: $social-color;
+    }
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+  }
+}

@@ -1,0 +1,34 @@
+.logo {
+  font-family: $secondary-font;
+  font-weight: 700;
+  @include font(24px, 28px);
+  letter-spacing: 0.03em;
+  color: #212121;
+
+  &__part {
+    color: $accent-color;
+  }
+
+  &.footer__logo {
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    @include font(26px, 31px);
+
+    &.header__logo {
+      margin-right: 93px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .logo {
+    &.header__logo {
+      margin-right: 88px;
+    }
+  }
+}
