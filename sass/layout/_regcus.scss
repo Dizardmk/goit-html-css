@@ -1,0 +1,60 @@
+.regcus {
+  &.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  & .title {
+    margin-bottom: 50px;
+  }
+
+  &-list {
+    display: flex;
+
+    &-item:not(:last-child) {
+      margin-right: 30px;
+    }
+    &-item:nth-child(1) svg {
+      width: 45px;
+      height: 50px;
+    }
+    &-item:nth-child(2) svg {
+      width: 40px;
+      height: 52px;
+    }
+    &-item:nth-child(3) svg {
+      width: 41px;
+      height: 43px;
+    }
+    &-item:nth-child(4) svg {
+      width: 80px;
+      height: 43px;
+    }
+    &-item:nth-child(5) svg {
+      width: 59px;
+      height: 47px;
+    }
+    &-item:nth-child(6) svg {
+      width: 89px;
+      height: 46px;
+    }
+
+    &-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 170px;
+      height: 90px;
+      border: 1px solid #afb1b8;
+      border-radius: 4px;
+      fill: $fill-social;
+      transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+        border-color: $accent-color;
+        fill: $accent-color;
+      }
+    }
+  }
+}
